@@ -31,5 +31,6 @@ Az általános típusokon a rendezés az alábbi módszerekkel valósítható me
 *  **Object** (`Object`) esetében használjuk a `compareTo` függvényt. Megjegyzendő, hogy a valószínűleg null mezők problémát jelenthetnek, ugyanis ameddig az `x.eqals(null)` mindig hamisat ad vissza, addig a `x.compareTo(null)` `NullPointerException`-t dob
 *  **Típusbiztos felsorolások**: Lásd Object
 *  **Kollekciók vagy tömbök**:  Az ilyen jellegű adatszerkezeteknél nem indokolt a `compareTo` implementálása. Példának okáért a `List`,`Set`, vagy `Map` adatszerkezetek se valósítját meg a `Comparable` interfészt. Ugyanis a legtöbb kollekcióban nincs határozott sorrendje az elemek bejárásának, így egy elemenkénti összehasonlításnak sincs semmi értelme.
+*  A primitív típusok csomagoló osztályai (a `Boolean` kivételével) mind megvalósítják a `Comparable` interfészt
 
 >A `Comparable` interfész helyett használahatunk [Comparator](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html "Comparator objektum") objektumokat alternatívaként. Arra azonban ilyenkor oda kell figyelni, hogy ha a `Comparator` objektum a lehetséges mezők közül csak egy alapján hasonlít össze, az eredmény nem feltétlenül lesz szinkronban az `equals` eredményével!
