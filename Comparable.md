@@ -3,6 +3,6 @@
 ### Deklaráció
 ```
 public interface Comparable<T>{
-    int compareTo(T item)
+    int compareTo(T item);
 }
 ```
