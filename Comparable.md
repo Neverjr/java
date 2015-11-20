@@ -20,3 +20,4 @@ A jól implementált Comparable interfész az alábbi tulajdonságokkal kell ren
   * Például ha `x = new X()` és `y = null`, akkor mind az `x.compareTo(y)`, mind az `y.compareTo(x)` `NullPointerException`-t vált ki.
 *  **Tranzitivitás**, azaz ha `x.compareTo(y) > 0` és `y.compareTo(z) > 0`, akkor `x.compareTo(z) > 0` is igaz kell legyen
 *  **Konzisztencia az `equals` függénnyel**: *Nem kötelező, de erősen ajánlott!* Azaz `x.compareTo(y)` akkor és csak akkor 0, ha`x.equals(y)`
+  * Annak érdekében, hogy a rendezett kollekciók (mint például a `Treeset`) is helyesen működjenek, ezekben az esetekben a konzisztencia megőrzése kötelező az `equals` függvénnyel
