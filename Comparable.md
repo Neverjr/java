@@ -1,1 +1,1 @@
-###A Comparable interfész implementálása
+##A Comparable interfész implementálása
