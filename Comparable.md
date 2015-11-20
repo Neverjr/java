@@ -1,4 +1,4 @@
-##A Comparable interfész implementálása
+#A Comparable interfész
 
 ### Deklaráció
 ```java
