@@ -25,3 +25,5 @@ A jól implementált Comparable interfész az alábbi tulajdonságokkal kell ren
 ###Megvalósítás
 > A `compareTo` hatékonyságát nagyban javíthatja az objektum adattagjainak sorrendje, azaz lehetőség szerint kezdjünk mindig a lehető legeltérőbb elemmel.
 
+Az általános típusokon a rendezés az alábbi módszerekkel valósítható meg:
+*  számszerű primitívek (`int`, `short`, `byte`): < vagy > operátorral. A lebegőpontos számoknál(`float`, `double`) a kerekítések miatt ezek nem használhatóak. Helyettük használjuk a [Float.compare(float, float)](http://docs.oracle.com/javase/7/docs/api/java/lang/Float.html#compare(float,%20float) "Float összehasonlítás"), illetve a [Double.compare(double, double)](http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html#compare(double,%20double) "Float összehasonlítás")
