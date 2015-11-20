@@ -7,7 +7,7 @@ public interface Comparable<T>{
 }
 ```
 ###Áttekintés
-A Comparable interfész a javaban egy adott T típuson teljes rendezést valósít meg. A különféle beépített típusok, mint a listák ( és tömbök) "gyárilag tartalmazzák", lehetővé téve többek közt az alábbi műveleteket:
+A Comparable interfész a javaban egy adott T típuson teljes rendezést valósít meg. Amennyiben egy objektumon megvalósítjuk a `Comparable` interfészt, az alábbi lehetőségek válnak elérhetővé:
 
 *  [Collections.sort](http://docs.oracle.com/javase/7/docs/api/java/util/Collections.html#sort(java.util.List) "rendezés") és [Collections.binarySearch](http://docs.oracle.com/javase/7/docs/api/java/util/Collections.html#binarySearch(java.util.List,%20T) "bináris keresés") használata listákon
 *  [Arrays.sort](http://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#sort(byte[]) "rendezés") és [Arrays.binarySearch](http://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#binarySearch(byte[],%20byte) "bináris keresés") használata tömbökön
