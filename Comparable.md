@@ -1,7 +1,7 @@
 ##A Comparable interfész implementálása
 
 ### Deklaráció
-```
+```java
 public interface Comparable<T>{
     int compareTo(T item);
 }
@@ -38,7 +38,7 @@ Az általános típusokon a rendezés az alábbi módszerekkel valósítható me
 ###Implementáció
 Az alábbiakban egy `Comparable` implementáció látható, amely 1.5-ösnél újabb java verziókban fordul:
 
-`
+```java
 import java.util.*;
 import java.io.*;
 
@@ -199,6 +199,6 @@ public final class Account implements Comparable<Account> {
      System.out.println( "is new -: " +  flaubert6.compareTo(flaubert) );
      System.out.println( "account type -: " +  flaubert7.compareTo(flaubert) );
    }
-} `
-
-> 
+}
+```
+>[Forrás](http://www.javapractices.com/topic/TopicAction.do?Id=10 "Forrás")
