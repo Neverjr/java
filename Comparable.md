@@ -21,3 +21,7 @@ A jól implementált Comparable interfész az alábbi tulajdonságokkal kell ren
 *  **Tranzitivitás**, azaz ha `x.compareTo(y) > 0` és `y.compareTo(z) > 0`, akkor `x.compareTo(z) > 0` is igaz kell legyen
 *  **Konzisztencia az `equals` függénnyel**: *Nem kötelező, de erősen ajánlott!* Azaz `x.compareTo(y)` akkor és csak akkor 0, ha`x.equals(y)`
   * Annak érdekében, hogy a rendezett kollekciók (mint például a `Treeset`) is helyesen működjenek, ezekben az esetekben a konzisztencia megőrzése kötelező az `equals` függvénnyel
+
+###Megvalósítás
+> A `compareTo` hatékonyságát nagyban javíthatja az objektum adattagjainak sorrendje, azaz lehetőség szerint kezdjünk mindig a lehető legeltérőbb elemmel.
+
