@@ -15,6 +15,7 @@ A Comparable interfész a javaban egy adott T típuson teljes rendezést valós�
 
 ###Követelmények
 A jól implementált Comparable interfész az alábbi tulajdonságokkal kell rendelkezzen:
-*  Antikommutativitás, azaz egy `x.compareTo(y)` pontosan ellentéte a`y.compareTo(x)` műveletnek.
-*  Kivétel szimmetria, azaz egy `x.compareTo(y)` pontosan ugyanazokat a kivételeket kell kiváltsa, mint egy `y.compareTo(x)`.
+*  **Antikommutativitás**, azaz egy `x.compareTo(y)` pontosan ellentéte a`y.compareTo(x)` műveletnek.
+*  **Kivétel szimmetria**, azaz egy `x.compareTo(y)` pontosan ugyanazokat a kivételeket kell kiváltsa, mint egy `y.compareTo(x)`.
   * Például ha `x = new X()` és `y = null`, akkor mind az `x.compareTo(y)`, mind az `y.compareTo(x)` `NullPointerException`-t vált ki.
+*  **Tranzitivitás**, azaz ha `x.compareTo(y) > 0` és `y.compareTo(z) > 0`, akkor `x.compareTo(z) > 0` 
