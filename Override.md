@@ -35,4 +35,6 @@ Az `@Override` használatával viszont ezekelkerülhetőek.
 
 ###Konklúzió
 Érdemes tehát minél hamarabb felvenni a jó szokások közé, hogy metódus felüldefiniálásánál tegyük elé az `@Override` annotációt.
->És ne hallgassunk az olyan önjelölt 'programozókra', akik szerint az `@Override` csak egy fícsör a nyelvben... 
+>És ne hallgassunk az olyan önjelölt 'programozókra', akik szerint az `@Override` csak egy fícsör a nyelvben...
+
+>[Forrás](http://www.javapractices.com/topic/TopicAction.do?Id=223 "Forrás")
