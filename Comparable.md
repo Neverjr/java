@@ -1,6 +1,6 @@
 #A Comparable interfész
 
-### Deklaráció
+### Szintaxis
 ```java
 public interface Comparable<T>{
     int compareTo(T item);
