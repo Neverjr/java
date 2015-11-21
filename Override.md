@@ -21,7 +21,14 @@ Az `@Override` annotáció legáltalánosabb felhasználási területe az `Objec
 ```
 
 A legprózaibb ok azonban, amiért az `@Override` annotációt kitalálták, az az, hogy védjen a kevésbé látványos, ugyanakkor annál bosszantóbb elírásoktól.
-Példának okáért a  ```java @Override public int hashcode(){...} ``` egyáltalán nem egy felüldefiniálás, mert nem egyezik meg a neve  a ```java @Override public int hashCode(){...} ```
+Példának okáért a 
+```java 
+@Override public int hashcode(){...} 
+``` 
+egyáltalán nem egy felüldefiniálás, mert nem egyezik meg a neve  a
+```java
+@Override public int hashCode(){...}
+```
 nevével, mivel csupa kisbetűvel írtuk. Akárhogy is, ez fordulna, viszont használat közben kellemetlen meglepetések érnének. Ugyanez érvényes akkor is ha a paraméterlista tér el.
 Ekkor ugyanis túlterhelésről beszélünk, ami szintén nehezen detektálható hibákhoz vezet a későbbiekben.
 Az `@Override` használatával viszont ezekelkerülhetőek.
