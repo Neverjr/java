@@ -9,9 +9,9 @@ A dobozolás használatával a kód olvashatóbbá és tömörebbé válik.
 
 A boxingnak két biztosított szempotja van:
 *  *Auto-boxing*: Ami automatikus konverzióra utal például az `int` és az `Integer` között
-  * Például: `int number = new Integer(4)`, ahol number értéke 4 lesz
+  * Például: `Integer number = 4`, ahol number értéke 4 lesz
 *  *Auto-unboxing*: Automatikus konverzió például `Boolean` és `boolean` között
-  * Például: `Boolean bool = true`, ahol bool értéke igaz lesz
+  * Például: `boolean bool = new Boolean(true)`, ahol bool értéke igaz lesz
   
 A boxing részben elrejti a primitívek és az objektumok közti különbséget, de nem szünteti meg. Többek között az alábbiak tulajdonságok se változak:
 *  Az objektumok lehetek `null` értékűek, míg a primitívek nem
