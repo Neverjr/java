@@ -37,6 +37,6 @@ Abban az esetben ha az egyik érték primitít, a másik meg a megfelelő csomag
 |**Művelet**  |**Viselkedés**                                                                                     |
 |-------------|:-------------------------------------------------------------------------------------------------:|
 |`x == y`     |primitívekként veszi figyelembe és összehasonlítja az értéket                                      |
-|`x.equals(y)`|nem fordul, ha x primitív; ellenkező esetben objektumnak tekinti őket és referenciát hasinlít össze|
+|`x.equals(y)`|nem fordul, ha x primitív; ellenkező esetben objektumnak tekinti őket és értéket hasonlít össze    |
 
 >[Forrás](http://javapractices.com/topic/TopicAction.do?Id=197 "Forrás")
