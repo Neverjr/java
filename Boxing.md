@@ -17,5 +17,18 @@ A boxing részben elrejti a primitívek és az objektumok közti különbséget,
 *  Az objektumok lehetek `null` értékűek, míg a primitívek nem
 *  Az objetumoknak van identitása és állapota, míg a primitíveknek csak állapota (értéke)
 
+>Bizonyos esetekben ezek problémákat okozhatnak a dobozolás használatakor.
+
+Emlékeztetőül:
+  * Legyünk óvatosak a `null` értékekkel. Egy `null` elem automatikus kidobozolása `NullPointerexception`-t okoz
+  * Mindig megfelelő körültekintéssel hasonltsunk össze két elemet a `==` operátorral, vagy az `equals` függvénnyel
+
+##Az összehasonltás szabályai
+
+Ha x és y is primitív vagy csomagoló objektum:
+|**Művelet** |Két primitív |Két objektum|
+|------------|-------------|------------|
+|`x == y` |értékek összehasonlítása | referenciák összehasonlítása|
+|`x.equals(y)` |fordítási hiba |értékek összehasonlítása |
 
 >[Forrás](http://javapractices.com/topic/TopicAction.do?Id=197 "Forrás")
