@@ -7,7 +7,7 @@ A dobozolás használatával a kód olvashatóbbá és tömörebbé válik.
 
 A boxignak két biztosított szempotja van:
 *  *Auto-boxing*: Ami automatikus konverzióra utal például az `int` és az `Integer` között
-  *Például: `int number = new Integer(4)`, ahol numbe értéke 4 lesz
+  * Például: `int number = new Integer(4)`, ahol number értéke 4 lesz
 *  *Auto-unboxing*: Automatikus konverzió például `Boolean` és `boolean` között
 
 >[Forrás](http://javapractices.com/topic/TopicAction.do?Id=197 "Forrás")
