@@ -7,7 +7,7 @@ A statikus importok lehetővé teszik, hogy egy osztály minőstés nélkül hiv
 ##Használata
 
 Bizonyos esetekben azonban "kifejezetten hasznos a statikus import. Ilyen helyzet, amikor konstans osztályokat importálunk.
-Például matematikai programokban gyakran fordul elő a `Math.PI`, ami ajavaban a `java.lang.Math` statikus osztályban szereplő konstas. Ilyenhelyzetekben az `import java.lang.Math.*` lehetővé teszi, hogy minőstett név nélkül hivatkozzunk a pi-re.
+Például matematikai programokban gyakran fordul elő a `Math.PI`, ami javaban a `java.lang.Math` konstans osztályban szereplő konstas. Ilyenhelyzetekben az `import java.lang.Math.*` lehetővé teszi, hogy minőstett név nélkül hivatkozzunk a pi-re.
   * Pi használata statikus importtal: `double pi = PI`
   * Pi haszálata statikus import nélkül: `double pi2 = Math.PI`
 
