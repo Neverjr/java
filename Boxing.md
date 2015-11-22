@@ -32,4 +32,10 @@ Ha x és y is primitív vagy csomagoló objektum:
 |`x == y`     |értékek összehasonlítása | referenciák összehasonlítása|
 |`x.equals(y)`|fordítási hiba           |értékek összehasonlítása     |
 
+Abban az esetben ha az egyik érték primitít, a másik meg a megfelelő csomagoló objektum:
+|**Művelet**  |**Viselkedés**                                                                                     |
+|-------------|:-------------------------------------------------------------------------------------------------:|
+|`x == y`     |primitívekként veszi figyelembe és összehasonlítja az értéket                                      |
+|`x.equals(y)`|nem fordul, ha x primitív; ellenkező esetben objektumnak tekinti őket és referenciát hasinlít össze|
+
 >[Forrás](http://javapractices.com/topic/TopicAction.do?Id=197 "Forrás")
