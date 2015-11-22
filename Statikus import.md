@@ -1,0 +1,1 @@
+#Statikus importok használata
