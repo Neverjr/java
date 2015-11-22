@@ -26,9 +26,10 @@ Emlékeztetőül:
 ##Az összehasonltás szabályai
 
 Ha x és y is primitív vagy csomagoló objektum:
-|**Művelet** |Két primitív |Két objektum|
-|------------|-------------|------------|
-|`x == y` |értékek összehasonlítása | referenciák összehasonlítása|
-|`x.equals(y)` |fordítási hiba |értékek összehasonlítása |
+
+|**Művelet**  |Két primitív             |Két objektum                 |
+|-------------|:-----------------------:|----------------------------:|
+|`x == y`     |értékek összehasonlítása | referenciák összehasonlítása|
+|`x.equals(y)`|fordítási hiba           |értékek összehasonlítása     |
 
 >[Forrás](http://javapractices.com/topic/TopicAction.do?Id=197 "Forrás")
