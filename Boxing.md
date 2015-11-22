@@ -33,6 +33,7 @@ Ha x és y is primitív vagy csomagoló objektum:
 |`x.equals(y)`|fordítási hiba           |értékek összehasonlítása     |
 
 Abban az esetben ha az egyik érték primitít, a másik meg a megfelelő csomagoló objektum:
+
 |**Művelet**  |**Viselkedés**                                                                                     |
 |-------------|:-------------------------------------------------------------------------------------------------:|
 |`x == y`     |primitívekként veszi figyelembe és összehasonlítja az értéket                                      |
