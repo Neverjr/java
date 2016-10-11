@@ -37,8 +37,8 @@ class CoordTypes{
 			this(0,0);
 		}
 		
-		public Point2D(int firs, int second){
-			x_coord = firs;
+		public Point2D(int first, int second){
+			x_coord = first;
 			y_coord = second;
 		}
 		
