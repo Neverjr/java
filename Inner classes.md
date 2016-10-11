@@ -6,6 +6,7 @@ A java nyelv lehetőséget biztosít arra, hogy osztályokat deklaráljunk mási
 
 ##Variációk
 
-| |Statikus|Nem statikus|Névtelen|
-|Nem lokális|Statikus beágyazott osztály|Belső osztály|(Nem lehetséges)|
-|Lokális|(Nem lehetséges)|Lokális belső osztály|Névtelen belső osztály|
+|  | Statikus | Nem statikus | Névtelen |
+| ------------- |:-------------:| -----:|
+| Nem lokális | Statikus beágyazott osztály | Belső osztály | (Nem lehetséges) |
+| Lokális | (Nem lehetséges) | Lokális belső osztály | Névtelen belső osztály |
