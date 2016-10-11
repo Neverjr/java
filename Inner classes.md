@@ -28,7 +28,7 @@ Egy java osztály (vagy interfész) tartalmazhat egy másik osztályt (vagy inte
 ###Példa
 
 ```java
-abstract class CoordTypes{
+class CoordTypes{
 	
 	public static class Point2D{
 		int x_coord, y_coord;
@@ -58,7 +58,7 @@ public class TestClass{
 	public static void main(String[] arguments){
 		//Tekintve, hogy a Point2D statikus beágyzott osztály,
 		// a külső osztályon keresztül hozzá tudunk férni a CoordTypes.Point2D szintaxissal.
-		//Arra viszont figyeljünk, hogy ehhez nem kell ( és nem is lehetséges) létrehozni a
+		//Arra viszont figyeljünk, hogy ehhez nem kell létrehozni a
 		//CoordTypes osztály példányát
 		
 		CoordTypes.Point2D point = new CoordTypes.Point2D(10,7);
