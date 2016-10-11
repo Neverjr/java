@@ -25,3 +25,45 @@ Egy java osztály (vagy interfész) tartalmazhat egy másik osztályt (vagy inte
   * A statikus belső osztályok hozzáférnek a tartalmazó osztály statikus (osztályszintű) tagjaihoz (adattagok és tagfüggvények). Példányszintű tagokat értelemszerűen nem érhetnek el.
   * A külső osztály a beágyazott statikus osztály minden tagjához (még a *private* láthatóságúakhoz is) hozzáférnek a belső osztály egy példányán keresztül. Osztályszintű hozzáférés a belső osztály irányába nem létezik.
   
+###Példa
+
+```java
+abstract class CoordTypes{
+	
+	public static class Point2D{
+		int x_coord, y_coord;
+		
+		public Point2D(){
+			this(0,0);
+		}
+		
+		public Point2D(int firs, int second){
+			x_coord = firs;
+			y_coord = second;
+		}
+		
+		@Override
+		public String toString(){
+			return "["+x_coord+";"+y_coord+"]";
+		}
+		
+		//Point2D egyéb tagjai
+	}
+	
+	//CoordTypes egyéb tagjai
+}
+
+public class TestClass{
+	
+	public static void main(String[] arguments){
+		//Tekintve, hogy a Point2D statikus beágyzott osztály,
+		// a külső osztályon keresztül hozzá tudunk férni a CoordTypes.Point2D szintaxissal.
+		//Arra viszont figyeljünk, hogy ehhez nem kell ( és nem is lehetséges) létrehozni a
+		//CoordTypes osztály példányát
+		
+		CoordTypes.Point2D point = new CoordTypes.Point2D(10,7);
+		System.out.println("Our coord is the following: "+point);
+	}
+	
+}
+```
