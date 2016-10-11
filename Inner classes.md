@@ -23,7 +23,7 @@ Egy java osztály (vagy interfész) tartalmazhat egy másik osztályt (vagy inte
   * A statikus beágyazott osztályok kiterjeszthetnek más osztályokat ( akár a saját tartalmazó osztályukat is).
   * A statikus beágyazott osztályok tartalmazhatnak statikus adattagokat (ellentétben a többi belső osztállyal, ezt lásd később).
   * A statikus belső osztályok hozzáférnek a tartalmazó osztály statikus (osztályszintű) tagjaihoz (adattagok és tagfüggvények). Példányszintű tagokat értelemszerűen nem érhetnek el.
-  * A külső osztály a beágyazott statikus osztály minden tagjához (még a *private* láthatóságúakhoz is) hozzáférnek a belső osztály egy példányán keresztül. Osztályszintű hozzáférés a külső osztály irányába nem létezik.
+  * A külső osztály a beágyazott statikus osztály minden tagjához (még a *private* láthatóságúakhoz is) hozzáférnek a belső osztály egy példányán keresztül.
   
 ###Példa
 
