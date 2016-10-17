@@ -57,7 +57,7 @@ public class TestClass{
 	
 	public static void main(String[] arguments){
 		//Tekintve, hogy a Point2D statikus beágyzott osztály,
-		// a külső osztályon keresztül hozzá tudunk férni a CoordTypes.Point2D szintaxissal.
+		//a külső osztályon keresztül hozzá tudunk férni a CoordTypes.Point2D szintaxissal.
 		//Arra viszont figyeljünk, hogy ehhez nem kell létrehozni a
 		//CoordTypes osztály példányát
 		
@@ -70,3 +70,6 @@ public class TestClass{
 
 ###Belső osztály
 
+Belső osztályt vagy interfészt deklarálhatunk nem statikus, azaz példányszintű adattagként is. Fontos megjegyezni, hogy ez a fajta osztálytípus csak és kizárólag egy másik osztályban készíthető ( tekintve, hogy minden adattag impliciten *static* egy interfészben).
+Ilyen esetekben a tartalmazó és a belső osztály (interfész) kapcsolatát leginkább a családtagokéhoz lehet hasonlítani. Hogy ez alatt mégis mit kell érteni? Azt, hogy mindketten hozzáférnek a másik minden tagjához, beleértve a *private* módosítóval ellátottakat is. Ugyanakkor egy lényeges különbség mégis akad. Ha a belső osztályból szeretnénk hozzáférni a külső valamely tagjához ( legyen az adattag/tagfüggvény, még a *private*-ek is), ezt mindenféle nehézség nélkül megtehetjük. Azonban, ha ezt a másik irányba szeretnénk megtenni, a helyzet már nem ilyen egyszerű. A külső osztály csak a belső egy példányán keresztül férhet hozzá annak tagjaihoz (de ekkor természetesen mindegyikhez). Magyarán először létre kell hozni a belső osztály egy példányát adattagként a külső osztályban.
+Noha az eddigiek alapján joggal feltételezhetjük, hogy szinte semmi megkötést nem tesz a Java az ilen kapcsolatokra, egy lényeges dolgot azért szem előtt kell tartanunk: Példányszintű belső osztályban nem deklarálhatunk statikus, azaz osztályszintű tagokat (ennek végiggondolása az olvasó feladata).
