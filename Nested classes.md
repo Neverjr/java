@@ -1,4 +1,4 @@
-#Lokális osztályok
+#Beágyazott osztályok
 
 ##Áttekintés
 
