@@ -77,3 +77,13 @@ Ugyanakkor egy lényeges különbség mégis akad.
 Ha a belső osztályból szeretnénk hozzáférni a külső valamely tagjához ( legyen az adattag/tagfüggvény, még a *private*-ek is), ezt mindenféle nehézség nélkül megtehetjük. Azonban, ha ezt a másik irányba szeretnénk megtenni, a helyzet már nem ilyen egyszerű. A külső osztály csak a belső egy példányán keresztül férhet hozzá annak tagjaihoz (de ekkor természetesen mindegyikhez). Magyarán először létre kell hozni a belső osztály egy példányát adattagként a külső osztályban. Ennek módja: **InnerClass ic = this.new InnerClass();**
 
 Noha az eddigiek alapján joggal feltételezhetjük, hogy szinte semmi megkötést nem tesz a Java az ilyen kapcsolatokra, egy lényeges dolgot azért szem előtt kell tartanunk: Példányszintű belső osztály nem tartalmazhat statikus deklarációt (ennek végiggondolása az olvasó feladata).
+
+####Összefoglaló
+  * A belső osztály láthatóságát (úgy, mint *public*,*private*, stb.) a tartalmazó osztály határozza meg.
+  * Hasonlóan a legfelső szinten lévő osztályokhoz, a belső osztályok is kiterjeszthetnek másik osztályokat, vagy implementálhatnak interfészeket (ahogyan egy belső interfész is kibővíthet más interfészeket).
+  * Egy belső osztály ellátható *final* **vagy** *abstract* módosítóval.
+  * Noha egy belső osztály is tartalmazhat saját belső osztályt (vagy interfészt), azonban a túlbonyolított struktúrák elkerülése végett tanácsos kerülni a túlzott egymásba ágyazást.
+  * A belső osztály megkötés nélkül hozzáfér a tartalmazó osztály minden tagjához.
+  * Fordítva viszont ez nem igaz, a tartalmazó osztály csak a belső egy példányán keresztül fér hozzá a tagjaihoz. Ennek szintaxisa: **InnerClass ic = this.new InnerClass();**.
+  
+###Példa
