@@ -1,11 +1,11 @@
-#A boxing helyes használata
+# A boxing helyes használata
 
-##Áttekintés
+## Áttekintés
 A boxing ("dobozolás") művelete az 1.5-ös java újtása volt, hogy megkönnyítse a konverziót a primitívek (`int`, `boolean`, `char`, ...) és a csomagoló osztályaik (`Integer`, `Boolean`, 
 `Character`,...) között. 
 A dobozolás használatával a kód olvashatóbbá és tömörebbé válik.
 
-##Tulajdoságok
+## Tulajdoságok
 
 A boxingnak két biztosított szempotja van:
 *  *Auto-boxing*: Ami automatikus konverzióra utal például az `int` és az `Integer` között
@@ -23,7 +23,7 @@ Emlékeztetőül:
   * Legyünk óvatosak a `null` értékekkel. Egy `null` elem automatikus kidobozolása `NullPointerexception`-t okoz
   * Mindig megfelelő körültekintéssel hasonltsunk össze két elemet a `==` operátorral, vagy az `equals` függvénnyel
 
-##Az összehasonltás szabályai
+## Az összehasonltás szabályai
 
 Ha x és y is primitív vagy csomagoló objektum:
 
@@ -40,7 +40,7 @@ Abban az esetben ha az egyik érték primitít, a másik meg a megfelelő csomag
 |`x.equals(y)`|nem fordul, ha x primitív; ellenkező esetben objektumnak tekinti őket és értéket hasonlít össze    |
 
 
-##Példa
+## Példa
 
 ```java
 import java.util.*;
